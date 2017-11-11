@@ -92,3 +92,8 @@ react-native: n/a - not inside a React Native project directory
 	```
 	
 参考：[https://stackoverflow.com/questions/33282545/bash-react-native-command-not-found]()
+
+
+### react-native run-ios 报错：`xcrun: error: unable to find utility "instruments", not a developer tool or in PATH`
+
+***解决：***在 终端执行如下命令 sudo xcode-select -s /Applications/Xcode.app/Contents/Developer/
