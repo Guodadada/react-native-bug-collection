@@ -38,7 +38,7 @@ localhost:~ v$ node -v
 All of them are:
 
  1. UILocalNotification
- 
+ 2. UIMutableUserNotificationAction
  
 解决：
 
