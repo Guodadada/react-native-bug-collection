@@ -52,6 +52,8 @@ localhost:~ v$ npm -v
 ### react-native 0.50.1 不能 debug
 releace 模式正常，debug 出现下边报错。
 
+![debug](https://github.com/Guodadada/react-native-bug-collection/blob/master/Resources/debug.jpeg)
+
 **解决**
 
   1. react-native-git-upgrade to react-native0.50.3
