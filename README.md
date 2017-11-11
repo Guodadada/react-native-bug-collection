@@ -35,7 +35,11 @@ icu4c	node
 localhost:~ v$ node -v
 -bash: node: command not found
 ```
+All of them are:
 
+ 1. UILocalNotification
+ 
+ 
 解决：
 
   1. 更改读写权限：`sudo chown -R $(whoami) /usr/local`
