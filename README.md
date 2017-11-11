@@ -37,5 +37,6 @@ localhost:~ v$ node -v
 ```
 
 解决：
+
   1. 更改读写权限：`sudo chown -R $(whoami) /usr/local`
   2. `brew link --overwrite node`
