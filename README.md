@@ -37,10 +37,12 @@ localhost:~ v$ node -v
 ```
 All of them are:
 
- 1. UILocalNotification
- 2. UIMutableUserNotificationAction
+ 1. 更改读写权限：`sudo chown -R $(whoami) /usr/local`
+ 2. `brew link --overwrite node`
  
-解决：
-
-  1. 更改读写权限：`sudo chown -R $(whoami) /usr/local`
-  2. `brew link --overwrite node`
+```
+localhost:~ v$ node -v
+v8.9.1
+localhost:~ v$ npm -v
+5.5.1
+```
