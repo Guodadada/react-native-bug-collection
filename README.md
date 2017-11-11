@@ -62,3 +62,33 @@ releace 模式正常，debug 出现下边报错。
 
   
 参考: [https://github.com/facebook/react-native/issues/16674](https://github.com/facebook/react-native/issues/16674)
+
+
+### react-native run-ios 报 `-bash: react-native: command not found`
+
+***解决：***
+
+1. 是否安装 Yarn, React Native 的命令行工具（react-native-cli），未安装终端运行下边代码：
+
+	```
+	npm install -g yarn react-native-cli
+	```
+2. 安装完测试 `react-native -v` 是否打印版本。
+3. 不打印进行下边操作：
+
+	```
+	localhost:~ v$ npm list -g | head -n 1
+	
+	// 得到一个路径 比如：/home/baptiste/.linuxbrew/lib
+	// 用 bin 替换 路径末尾的 lib
+	// 添加全局变量：export PATH="/home/baptiste/.linuxbrew/bin:$PATH"
+	// 重启终端
+	// 测试 react-native -v
+	
+	localhost:~ v$ react-native -v
+react-native-cli: 2.0.1
+react-native: n/a - not inside a React Native project directory
+	
+	```
+	
+参考：[https://stackoverflow.com/questions/33282545/bash-react-native-command-not-found]()
