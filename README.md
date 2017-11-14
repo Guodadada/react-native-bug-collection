@@ -91,7 +91,7 @@ react-native: n/a - not inside a React Native project directory
 	
 	```
 	
-参考：[https://stackoverflow.com/questions/33282545/bash-react-native-command-not-found]()
+参考：[https://stackoverflow.com/questions/33282545/bash-react-native-command-not-found](https://stackoverflow.com/questions/33282545/bash-react-native-command-not-found)
 
 
 ### react-native run-ios 报错：`xcrun: error: unable to find utility "instruments", not a developer tool or in PATH`
@@ -108,3 +108,10 @@ image: {
     },
 
 ```
+
+### bash gradle command not found && gradle: Permission denied
+
+
+参考：[http://blog.csdn.net/u013424496/article/details/52684213](http://blog.csdn.net/u013424496/article/details/52684213)
+
+参考：[https://stackoverflow.com/questions/17668265/gradlew-permission-denied](https://stackoverflow.com/questions/17668265/gradlew-permission-denied)
