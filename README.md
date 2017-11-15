@@ -115,3 +115,19 @@ image: {
 参考：[http://blog.csdn.net/u013424496/article/details/52684213](http://blog.csdn.net/u013424496/article/details/52684213)
 
 参考：[https://stackoverflow.com/questions/17668265/gradlew-permission-denied](https://stackoverflow.com/questions/17668265/gradlew-permission-denied)
+
+
+### Could not install the app on the device, read the error above for details.Make sure you have an Android emulator running or a device connected and have set up your Android development environment:
+
+解决：终端执行下边的命令
+
+```
+chmod 755 android/gradlew
+
+/**
+ * 1.文件所有者可读可写可执行
+ * 2.与文件所有者同属一个用户组的其他用户可读可执行 
+ * 3.其它用户组可读可执行
+ */
+
+```
