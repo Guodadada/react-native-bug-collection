@@ -131,3 +131,11 @@ chmod 755 android/gradlew
  */
 
 ```
+
+### npm install 安装过慢，仅临时切换源
+
+```
+npm install --registry=http://registry.npm.taobao.org
+
+
+```
