@@ -137,5 +137,10 @@ chmod 755 android/gradlew
 ```
 npm install --registry=http://registry.npm.taobao.org
 
-
 ```
+
+
+
+### Android 下 /node_modules/react-native/third-party/glog-0.3.4/test-driver'. Couldn't follow symbolic link.
+
+根据 github 上的回复，只要遇到 Couldn't follow symbolic link. 就刪除发生错误的文件夹即可。
