@@ -144,3 +144,8 @@ npm install --registry=http://registry.npm.taobao.org
 ### Android 下 /node_modules/react-native/third-party/glog-0.3.4/test-driver'. Couldn't follow symbolic link.
 
 根据 github 上的回复，只要遇到 Couldn't follow symbolic link. 就刪除发生错误的文件夹即可。
+
+
+### FlatList Item 的属性和 State 有关联时，State 改变，FlatList 不更新界面问题
+
+解决：给FlatList指定extraData={this.state}属性
