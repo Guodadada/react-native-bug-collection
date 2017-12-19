@@ -149,3 +149,16 @@ npm install --registry=http://registry.npm.taobao.org
 ### FlatList Item 的属性和 State 有关联时，State 改变，FlatList 不更新界面问题
 
 解决：给FlatList指定extraData={this.state}属性
+
+
+### 使用svg格式图片防止失真
+可以生成 ttf 格式的网站 [https://icomoon.io/app/#/select]()
+
+步骤：
+ 
+- 向网站导入 SVG 格式的图片
+- 选中所有上传的 SVG
+- Generate Font
+- 下载
+- 讲 ttf 和 selection.json 替换到项目中（Android 和 iOS）
+
