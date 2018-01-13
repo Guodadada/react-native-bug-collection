@@ -162,3 +162,8 @@ npm install --registry=http://registry.npm.taobao.org
 - 下载
 - 讲 ttf 和 selection.json 替换到项目中（Android 和 iOS）
 
+### react-native run-ios fails: ENOENT no such file or directory, uv_chdir
+
+
+[https://github.com/facebook/react-native/issues/11293]()
+For me I just do a react-native upgrade then react-native run-ios and it works
