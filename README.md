@@ -167,3 +167,16 @@ npm install --registry=http://registry.npm.taobao.org
 
 [https://github.com/facebook/react-native/issues/11293]()
 For me I just do a react-native upgrade then react-native run-ios and it works
+
+
+### ActivityIndicator 
+
+ActivityIndicator 使用必须设置高度，否则显示不出来
+
+```
+
+ <ActivityIndicator animating={moreLoading}
+                    style={{marginRight: px2dp(10), height: 15}}
+                    size={'small'}/>
+
+```
