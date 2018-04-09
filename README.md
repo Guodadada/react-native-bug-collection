@@ -195,3 +195,44 @@ Specifies the reason for your app to get write-only access to the user’s photo
 iOS 11 and later
 
 参考: [https://developer.apple.com/library/content/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html]()
+
+
+### 保存服务器的图片到相册
+
+由于API：`saveToCameraRoll(tag, type?)` 在 `Android` 上 `tag` 必须是本地的 `URI`
+
+**iOS 可以通过`RN`提供的 `CameraRoll` 实现**
+
+1. 先把原生的库添加到项目中，`Xcode` 中添加 `RCTCameraRoll.xcodeproj`，添加 `lib`
+2. 下边代码实现保存到相册。
+
+```
+
+CameraRoll
+	.saveToCameraRoll(imgURL, 'photo')
+	.then((res) => {
+                		console.log('res ===> ', res);
+                		toastShort('保存成功');
+                })
+
+```
+
+
+**Andorid**
+
+通过 `react-native-fetch-blob`，下载到本地，再通过 `CameraRoll` 写入相册
+
+```
+RNFetchBlob
+	.config({path: PictureDir + '/userThumbnails/user.png'})
+	.fetch('GET', imgURL, {
+		'Cache-Control': 'no-store'
+		})
+	.then((res) => {
+		CameraRoll.saveToCameraRoll('file://' + res.path(), 'photo').then((res) => {
+			console.log('res ===> ', res);
+			toastShort('保存成功');
+		})
+	});
+```
+
