@@ -180,3 +180,18 @@ ActivityIndicator 使用必须设置高度，否则显示不出来
                     size={'small'}/>
 
 ```
+
+
+### NSPhotoLibraryAddUsageDescription 报错
+
+**iOS 11 新特性**
+
+在 `info.plist` 中添加 `Privacy - Photo Library Additions Usage Description`，并说明理由
+
+"Privacy - Photo Library Additions Usage Description”
+
+Specifies the reason for your app to get write-only access to the user’s photo library. See NSPhotoLibraryAddUsageDescription for details.
+
+iOS 11 and later
+
+参考: [https://developer.apple.com/library/content/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html]()
