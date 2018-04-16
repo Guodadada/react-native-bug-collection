@@ -244,3 +244,11 @@ RNFetchBlob
 - 创建一个分支：右下角点击`git`，`NewBranch`
 - 在新分支中写代码，不影响别的分支。
 - 切换分支：CheckOut
+
+
+### 画虚线
+
+```
+borderStyle: 'dashed'
+
+```
