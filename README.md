@@ -252,3 +252,23 @@ RNFetchBlob
 borderStyle: 'dashed'
 
 ```
+
+### iPhone X 适配
+
+```
+安全区：
+- 顶部：普通的是 20px，X 的是 44px
+- 底部：X 的是34px
+
+<View style={isiPhoneX() ? {
+                    height: 44,
+                    backgroundColor: core.cWhite,
+                } : {height: Platform.OS === 'ios' ? 22 : 0, backgroundColor: core.cWhite}}/>
+
+```
+
+### 使用 react-navigation 框架的项目，有 NavigationBar 和 无的界面侧滑时候会出现跳动现象
+
+解决方法：
+
+设置 headerMode: 'screen' 即可
